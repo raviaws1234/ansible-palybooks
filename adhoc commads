@@ -8,6 +8,7 @@ Add the following two hosts IP address..
 
 # ansible -m ping webservers
 # ansible -m ping -all
+# ansible -i hosts all -m user -a "name=johnd state=present"
 # ansible -m command -a "df -h" webservers
 # ansible -m command -a "free -mt" webservers
 # ansible -m shell -a "service httpd status" webservers > service_status.txt
